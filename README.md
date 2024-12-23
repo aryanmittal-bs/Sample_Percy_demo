@@ -73,50 +73,6 @@ to know which organization and project to upload the snapshots to.
 You can view the screenshots in Percy now if you want, but there will be no visual comparisons
 yet. You'll see that Percy shows you that these snapshots come from your `tutorial-example` branch.
 
-### Step 5
-
-Use your text editor to edit `index.html` and introduce some visual changes. For example, you can
-add inline CSS to bold the "Clear completed" button on line 32. After the change, that line looks
-like this:
-
-``` html
-<button class="clear-completed" style="font-weight:bold">Clear completed</button>
-```
-
-### Step 6
-
-Commit the change:
-
-``` shell
-$ git commit -am "Emphasize 'Clear completed' button"
-```
-
-### Step 7
-
-Run the tests with snapshots again:
-
-``` shell
-$ npm run test
-```
-
-This will run the tests again and take new snapshots of our modified application. The new snapshots
-will be uploaded to Percy and compared with the previous snapshots, showing any visual diffs.
-
-At the end of the test run output, you will see logs from Percy confirming that the snapshots were
-successfully uploaded and giving you a direct URL to check out any visual diffs.
-
-### Step 8
-
-Visit your project in Percy and you'll see a new build with the visual comparisons between the two
-runs. Click anywhere on the Build 2 row. You can see the original snapshots on the left, and the new
-snapshots on the right.
-
-Percy has highlighted what's changed visually in the app! Snapshots with the largest changes are
-shown first You can click on the highlight to reveal the underlying screenshot.
-
-If you scroll down, you'll see that no other test cases were impacted by our changes to the 'Clear
-completed' button. The unchanged snapshots appear grouped together at the bottom of the list.
-
 ### Finished! 😀
 
 From here, you can try making your own changes to the app and tests, if you like. If you do, re-run
